@@ -7,7 +7,12 @@ const App = () => {
     SplashScreen.hide();
   }, []);
 
-  return <WebView source={{uri: 'https://erptest.srgroupco.com/'}} />;
+  return (
+    <WebView
+      cacheMode="LOAD_NO_CACHE"
+      source={{uri: 'https://erptest.srgroupco.com/'}}
+    />
+  );
 };
 
 export default App;
