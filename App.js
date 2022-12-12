@@ -10,7 +10,7 @@ const App = () => {
   return (
     <WebView
       cacheMode="LOAD_NO_CACHE"
-      source={{uri: 'https://erptest.srgroupco.com/'}}
+      source={{uri: 'https://erp.srgroupco.com/'}}
     />
   );
 };
