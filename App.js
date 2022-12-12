@@ -1,9 +1,13 @@
-import {View, Text} from 'react-native';
-import React from 'react';
+import React, {useEffect} from 'react';
 import {WebView} from 'react-native-webview';
+import SplashScreen from 'react-native-splash-screen';
 
 const App = () => {
-  return <WebView source={{uri: 'https://erp.srgroupco.com/'}} />;
+  useEffect(() => {
+    SplashScreen.hide();
+  }, []);
+
+  return <WebView source={{uri: 'https://erptest.srgroupco.com/'}} />;
 };
 
 export default App;
